@@ -14,9 +14,8 @@ The following versions of PHP are supported.
 * HHVM
 
 ## Usage
-```php
-// Coming soon
-```
+
+Please see [example.php](https://github.com/JobBrander/moonclerk-php/blob/master/example.php) for details.
 
 ## Install
 

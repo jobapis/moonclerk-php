@@ -49,21 +49,22 @@ class Client
     private function get($path = '', $filters = [])
     {
         try {
-            $path = $path.$this->addFilters($filters);
-            $response = $this->getResponse($path);
+            $response = $this->getResponse($path.$this->addFilters($filters));
             if ($response->getStatusCode() == '200') {
                 return json_decode($response->getBody(true));
             }
         } catch ( \Exception $e) {
-            // Handle errors
-            print_r($e); exit;
-            echo $e->getMessage();
+            // Return error messaging
+            return $e->getMessage();
         }
         return null;
     }
 
     private function addFilters($filters = [])
     {
+        if ($filters) {
+            return '?'.http_build_query($filters);
+        }
         return '';
     }
 
