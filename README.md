@@ -3,6 +3,17 @@
 This package makes it simple to integrate your application with Moonclerk's read
 only API discussed [here](https://github.com/moonclerk/developer/blob/master/api/README.md).
 
+## What's Moonclerk?
+
+Moonclerk is a wrapper around Stripe's payment processor that allows you to easily 
+set up recurring payments. Moonclerk will generate the forms and let you embed them
+on your site or link to them directly that way payments are handled securely and
+even non-technical people can update pricing, issue coupon codes, and check on 
+payment statuses.
+
+*Note: I am not affiliated with Moonclerk in any way; I just happen to use their
+product.*
+
 ## Requirements
 
 The following versions of PHP are supported.
